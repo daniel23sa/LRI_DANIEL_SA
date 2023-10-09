@@ -1,0 +1,47 @@
+Function main
+Call HABILITAR
+ '1
+ 
+ 
+ Integer I
+ For I = I To 3
+ 	
+ 
+ 
+Go PONTO1
+ ' Print "O NOME DA MINHA EQUIPE É DOIS ", CX(Here), CY(Here), CZ(Here)
+   Print "O NOME DA MINHA EQUIPE É DOIS ", CX(PONTO3), CY(PONTO2), CZ(PONTO1)
+ 
+Go PONTO2
+Go PONTO3
+Call arco
+
+
+ Next
+ Print " FIM DE PROGRAMA "
+ 
+
+Fend
+Function HABILITAR
+	
+	If ErrorOn Then Reset
+	Power High
+	Speed 50
+	Accel 50, 50
+	SpeedS 500
+	AccelS 50, 50
+	
+	Fend
+	
+	Function arco
+		Go PONTO2
+		Arc PONTO1, PONTO3
+		
+		
+
+	Fend
+	
+	
+	 
+	
+	
